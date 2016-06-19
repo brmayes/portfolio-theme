@@ -1,0 +1,73 @@
+@import url("fonts.css");
+
+body {
+  font-family: "m200";
+}
+
+h1 {
+  font-family: "Sacramento";
+  font-size: 45pt;
+}
+h5 {
+  font-family: "m200", serif;
+  text-align: center;
+}
+
+.logo {
+  min-height: 125px;
+
+  &.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  .name-header {
+    min-width:375px;
+    text-align: center;
+
+
+    h1,h5 {
+      position: absolute;
+    }
+    h5 {
+      margin-top: 70px;
+      margin-left: 148px;
+      font-size: 13px;
+    }
+  }
+}
+
+.menubar {
+    display: flex;
+    justify-content: center;
+
+  .menu {
+    flex-grow: 2;
+
+    ul {
+      display: inline-block;
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+        transition: all 0.4s;
+        // border: 1px solid black;
+        padding: 0 10px;
+
+        &:hover {
+          font-family: "m700";
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .social {
+    flex-grow: 1;
+    text-align: right;
+  }
+}
+
+
+.container {
+
+}
